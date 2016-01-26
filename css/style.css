@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800);
+@import url(https://fonts.googleapis.com/css?family=Roboto:900);
+
 /* CSS RESET FOR BROWSER COMPATIBILITY */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -96,7 +99,9 @@ table {
     float: left;
     padding: 15px;
 }
-
+.page{
+    height: 100vh;
+}
 .row{
     clear: both;   
 }
@@ -120,6 +125,14 @@ body{
     font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
 }
 
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 5em;
+}
+h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+}
 p{
     line-height: 150%;
     text-align: justify;
@@ -145,13 +158,22 @@ a:hover{
 	width: 50%;
 }
 #logowrapper{
-    padding: 3em;
+    padding: 3em 0em;
     background:rgba(238,238,238,0.75);
 }
 
 .yellow-tint {
     background: rgba(237,188,100,0.50);
     height: 100vh;
+}
+
+#breadicon{
+    padding: 2em 0em;
+    transition: transform .5s;
+}
+
+#breadicon:hover{
+    transform: rotate(-90deg);
 }
 @media only screen and (max-width: 768px) {
     [class*="col-"]{
@@ -173,5 +195,7 @@ a:hover{
 @media only screen and (max-width: 492px) {
     
 }
+
+
 
 
