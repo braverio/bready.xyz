@@ -1,0 +1,14 @@
+.parallax{
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/*Fill in with image links*/
+.parallax-0{
+    background-image: url("/img/bread-923865_1920.jpg");
+    height: 100vh;
+}
+.parallax-1{
+    background-image: url("/img/placeholder.jpg");
+}

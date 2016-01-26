@@ -6,6 +6,8 @@ $(document).ready(function () {
         .animate(
             { opacity: 1 },
             { queue: false, duration: 1500 }
-  );}
+        );
+    }
+    
     setTimeout(loady, 100);
 });
