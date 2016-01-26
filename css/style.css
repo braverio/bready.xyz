@@ -191,9 +191,17 @@ a:hover{
     #logo img{
         width: 75%;
     }
+    #breadicon{
+        width: 50%;
+    }
 }
 @media only screen and (max-width: 492px) {
-    
+    h1{
+        font-size: 3em;
+    }
+    h2{
+        font-size: 1.5em;
+    }
 }
 
 
