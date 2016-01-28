@@ -6,24 +6,49 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/parallax.css">
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script src="scripts/onload.js"></script>
+    <script src="scripts/mainpage.js"></script>
 </head>
 <body>
-    <div class="page parallax parallax-0">
+    <div class="page parallax parallax-0" id="page-0">
         <div class="yellow-tint">
             <div class="hidden" id="logo">
                 <div id="logowrapper">
                     <img src="img/logo.svg">
                 </div>
             </div>
+            <div class="see-more">
+                <a href="#page-1"><div class="button">See our food</div></a>
+            </div>
         </div>
     </div>
-    <div class="page">
-        <div class="vertical-center center-text">
-        <h1>Free Gluten?</h1>
-        <img id="breadicon" src="img/favicon.svg">
-        <h2>Nope. Gluten free.</h2>
+    <div class="page" id="page-1">
+        <div class="vertical-center center-text circle-images row">
+        <div class="container">
+            <div class="responsive-row">
+                <div class="col-3">
+                    <img src="img/bake-599521_640-square.jpg">
+                    <h2>Fresh<br>ingredients.</h2>
+                </div>
+                <div class="col-3">
+                    <img src="img/bread-923532_640-square.jpg">
+                    <h2>Quality<br>taste.</h2>
+                </div>
+                </div>
+            <div class="responsive-row">
+                <div class="col-3">
+                    <img src="img/croissants-569075_640-square.jpg">
+                    <h2>Rich<br>aromas.</h2>
+                </div>
+                <div class="col-3">
+                    <img src="img/poppy-seed-almond-cake-993541_640.jpg">
+                    <h2>Professional<br>presentation.</h2>
+                </div>
+            </div>
+        </div>
         </div>
     </div>
+    <footer>
+        <div class="center-text">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
+    </footer>
 </body>
 </html>

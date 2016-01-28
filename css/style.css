@@ -1,5 +1,12 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800);
-@import url(https://fonts.googleapis.com/css?family=Roboto:900);
+@font-face{
+    font-family: Overpass;
+    src: url('Overpass-Light.ttf');
+}
+@font-face{
+    font-family: Overpass-Bold;
+    src: url('Overpass-Bold.ttf');
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 
 /* CSS RESET FOR BROWSER COMPATIBILITY */
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -61,10 +68,10 @@ table {
 .container{
     margin-left: auto;
     margin-right: auto;
-    max-width: 960px;
+    max-width: 1500px;
 }
 
-.container:after, .row:after {
+.container:after, .row:after, .page:after{
     visibility: hidden;
     display: block;
     font-size: 0;
@@ -80,7 +87,7 @@ table {
 [class*="grid-"]{
     display: inline-block;
     vertical-align: top;
-    padding: 15px;
+    padding: 30px;
 }
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
@@ -97,7 +104,10 @@ table {
 
 [class*="col-"] {
     float: left;
-    padding: 15px;
+    padding: 30px;
+}
+[class*="col-"] img{
+    width: 100%;
 }
 .page{
     height: 100vh;
@@ -120,30 +130,39 @@ table {
     margin-left: auto;
 }
 .hidden{display: none;}
+.circle-images img{
+    border-radius: 50%;
+    padding: 2em;
+    border: 2px solid #555;
+    margin: 2em 0em;
+}
 body{
 	background: #eee;
-    font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+    font-family: 'Overpass', 'Helvetica', 'Arial', sans-serif;
 }
 
 h1{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Overpass-Bold', sans-serif;
     font-size: 5em;
 }
 h2{
-    font-family: 'Open Sans', sans-serif;
     font-size: 2em;
 }
 p{
     line-height: 150%;
     text-align: justify;
 }
-
-a{
-    color: #1B75BB;
+.button {
+    background: #1976D2;
+    padding: 1em;
+    text-decoration: none;
+    border-radius: .25em;
+    transition: background .25s;
 }
 
-a:hover{
-    color: #0098CB;
+.button:hover {
+    background: #2196F3;
+    text-decoration: none;
 }
 
 #logo {
@@ -167,6 +186,20 @@ a:hover{
     height: 100vh;
 }
 
+.see-more{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    color: #eee;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    text-align: center;
+}
+.see-more a{
+    text-decoration: none;
+    color: #eee;
+}
 #breadicon{
     padding: 2em 0em;
     transition: transform .5s;
@@ -182,6 +215,10 @@ a:hover{
     [class*="grid-"]{
         width: 100%;   
     }
+    .col-1, .col-2, .col-3, .col-4 {width: 50%;}
+    .responsive-row{
+        clear: both;
+    }
     .hide-on-mobile{
         display: none; 
     }
@@ -196,6 +233,15 @@ a:hover{
     }
 }
 @media only screen and (max-width: 492px) {
+    .vertical-center{
+        position: static;
+        top: 0%;
+        transform: translateY(0%);
+    }
+    .page{
+        height: 100%;
+    }
+    .col-1, .col-2, .col-3, .col-4 {width: 100%;}
     h1{
         font-size: 3em;
     }
@@ -203,7 +249,3 @@ a:hover{
         font-size: 1.5em;
     }
 }
-
-
-
-
