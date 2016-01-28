@@ -256,9 +256,7 @@ p{
 }
 
 footer{
-    bottom: 0px;
     width: 100%;
-    position: fixed;
     background: #edbc64;
     padding: 2em 0em;
 }
