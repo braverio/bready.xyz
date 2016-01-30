@@ -226,6 +226,11 @@ p{
     font-family: "Overpass", sans-serif;
 }
 
+input[type="submit"]{
+    font-family: "Overpass-Bold", sans-serif;
+    font-size: 2em;
+    padding: 0.5em;
+}
 @media only screen and (max-width: 768px) {
     [class*="col-"]{
         width: 100%;
