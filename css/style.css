@@ -207,7 +207,11 @@ p{
     text-decoration: none;
     color: #eee;
 }
-#page-2{
+
+#page{
+    padding: 5em 0em;
+}
+#page:nth-child(odd){
     background: #222;
     color: #eee;
     margin-left: auto;
@@ -230,6 +234,21 @@ input[type="submit"]{
     font-family: "Overpass-Bold", sans-serif;
     font-size: 2em;
     padding: 0.5em;
+}
+
+blockquote{
+  display:block;
+  padding: 15px 20px 15px 45px;
+  margin: 0 0 20px;
+  position: relative;
+}
+
+blockquote::before{
+  content: "\201C"; /*Unicode for Left Double Quote*/
+    font-size: 5em;
+  position: absolute;
+  left: 10px;
+  top:5px;
 }
 @media only screen and (max-width: 768px) {
     [class*="col-"]{
