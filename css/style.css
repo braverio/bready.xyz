@@ -157,9 +157,9 @@ h1{
 h2{
     font-size: 2em;
 }
-p{
-    line-height: 150%;
+p, blockquote{
     font-size: 1.2em;
+    line-height: 150%;
 }
 .button {
     background: #1976D2;
@@ -189,12 +189,11 @@ p{
 }
 
 .yellow-tint {
-    background: rgba(237,188,100,0.50);
+    background: rgba(237,188,100,0.7);
     height: 100vh;
 }
 
 .more{
-    padding-top: 2em;
     font-family: 'Roboto', sans-serif;
     font-size: 2em;
     text-align: center;
@@ -208,10 +207,10 @@ p{
     color: #eee;
 }
 
-#page{
+.page{
     padding: 5em 0em;
 }
-#page:nth-child(odd){
+.page:nth-child(even){
     background: #222;
     color: #eee;
     margin-left: auto;
@@ -225,7 +224,8 @@ p{
 .form-container input, .form-container textarea{
     width: 100%;
     border: none;
-    padding: 1em;
+    padding: 0.5em;
+    font-size: 1.2em;
     border-radius: 5px;
     font-family: "Overpass", sans-serif;
 }
@@ -261,9 +261,17 @@ blockquote::before{
     top: 50%;
     transform: translateY(-50%);
 }
+
 .major-quote-credit{
     font-style: italic;
     text-align: right;
+}
+
+#downarrow, #rightarrow{
+    max-width: 25%;
+}
+#rightarrow{
+    transform: rotate(-90deg);
 }
 @media only screen and (max-width: 960px){
     .vertical-center-parent{
