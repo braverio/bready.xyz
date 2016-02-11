@@ -102,6 +102,8 @@ table {
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
+.col-4-single{width: 33.33%;}
+
 [class*="col-"] {
     float: left;
     padding: 30px;
@@ -176,9 +178,6 @@ p{
 #logo {
 	width: 100%;
 	text-align: center;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
 }
 
 #logo img {
@@ -194,16 +193,17 @@ p{
     height: 100vh;
 }
 
-.see-more{
+.more{
+    padding-top: 2em;
     font-family: 'Roboto', sans-serif;
     font-size: 2em;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
     text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 50%;
 }
-.see-more a{
+.more a{
     text-decoration: none;
     color: #eee;
 }
@@ -250,6 +250,32 @@ blockquote::before{
   left: 10px;
   top:5px;
 }
+.vertical-center-parent {
+    position: relative;
+}
+
+.vertical-center-child {
+    position: absolute;
+    width: 66.66%;
+    padding: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.major-quote-credit{
+    font-style: italic;
+    text-align: right;
+}
+@media only screen and (max-width: 960px){
+    .vertical-center-parent{
+        position: static;
+    }
+    .vertical-center-child{
+        position: static;
+        width: 100%;
+        top: 0%;
+        transform: translateY(0%);
+    }
+}
 @media only screen and (max-width: 768px) {
     [class*="col-"]{
         width: 100%;
@@ -257,7 +283,16 @@ blockquote::before{
     [class*="grid-"]{
         width: 100%;   
     }
-    .col-1, .col-2, .col-3, .col-4 {width: 50%;}
+    .col-1, .col-2, .col-3, .col-4 {
+        width: 50%;
+        text-align: center;
+    }
+    .col-4-single{
+        width: 50%;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .responsive-row{
         clear: both;
     }
@@ -281,6 +316,10 @@ footer{
     padding: 2em 0em;
 }
 @media only screen and (max-width: 492px) {
+    .see-more{
+        max-width: none;
+        width: 80%;
+    }
     .col-1, .col-2, .col-3, .col-4 {width: 100%;}
     h1{
         font-size: 3em;

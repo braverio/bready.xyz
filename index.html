@@ -6,25 +6,54 @@
     <link rel="icon" href="img/favicon.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/parallax.css">
+    <link rel="stylesheet" href="css/navfooter.css">
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
     <script src="scripts/mainpage.js"></script>
 </head>
 <body>
+    <div class="desktop-nav main-page">
+    <nav>
+        <div class="container">
+        <ul> 
+            <li><a href="/"><img src="/img/logo-white-small.svg"></a></li>
+            <li>
+                <a href="/contact">Contact</a>
+                <ul>
+                    <li><a href="/contact">Contact Us</a></li>
+                    <li><a href="/reservations">Reservations</a></li>
+                </ul>
+            </li>
+            <li><a href="/menu">Menu</a></li>
+            <li>
+                <a href="/about">About</a>
+                <ul>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/reviews">Reviews</a></li>
+                    <li><a href="/loyalty">Loyalty Program</a></li>
+                </ul>
+            </li>
+	   </ul>
+        </div>
+    </nav>
+    </div>
     <div class="fullpage parallax parallax-0">
         <div class="yellow-tint">
+            <div class="vertical-center">
             <div class="hidden" id="logo">
                 <div id="logowrapper">
                     <img src="img/logo.svg">
                 </div>
+            <div class="more">
+                <a href="#page-1"><div class="button">Learn more</div></a>
             </div>
-            <div class="see-more">
-                <a href="#page-1"><div class="button">See our food</div></a>
+            </div>
             </div>
         </div>
     </div>
     <div id="page-1">
-        <div class="center-text circle-images row">
         <div class="container">
+        <div class="center-text circle-images row">
+            <h1>About Us</h1>
             <div class="responsive-row">
                 <div class="col-3">
                     <img src="img/bake-599521_640-square.jpg">
@@ -50,13 +79,18 @@
                 </div>
             </div>
         </div>
-        </div>
-    </div>
-    <div id="page">
-        <div class="container">
-            <div class="row">
-                <h1>About us</h1>
+        <div class="row vertical-center-parent">
+            <div class="col-8">
+            <div class="vertical-center-child">
+                    <h1>Meet the chef</h1>
+                    <p>Hello everybody! I am Seok Bao, the master chef and baker for Bready. As a child, I grew up with a lot of bread foods. I loved baked goods. However, as I grew older, I realized that such foods were bad on my health. I began experimenting. I began trying new things. Taste and health are equal in priority when I make foods. I learned how to make goods without the need for gluten and sometimes, without wheat while accomplishing the same great taste. Now, I spend my time making sure I can bring the joy that touches my tastebuds to you!</p>
+                    <h2 class="major-quote-credit">-Seok Bao,<br>Professional chef and baker since 1984</h2>
             </div>
+            </div>
+            <div class="col-4-single">
+                    <img src="img/breadychef.jpg">
+            </div>
+        </div>
         </div>
     </div>
     <div class="parallax parallax-1" id="page">
@@ -75,7 +109,7 @@
             <div class="row">
                 <div class="col-4">
                     <blockquote>
-                        Before I was ready, my life was a mess. Once this bakery came into my life, was swept away!
+                        Before I was ready, my life was a mess. Once this bakery came into my life, I was swept away!
                     </blockquote>
                     -Alivery Furdudan
                 </div>
