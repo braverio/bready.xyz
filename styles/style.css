@@ -157,6 +157,10 @@ h1{
 h2{
     font-size: 2em;
 }
+h3{
+    font-family: 'Overpass-Bold', sans-serif;
+    font-size: 3em;
+}
 p, blockquote{
     font-size: 1.2em;
     line-height: 150%;
@@ -316,6 +320,12 @@ a:hover{
     text-align: center;
     padding: 1em;
     text-decoration: none;
+}
+.black-overlay{
+    background: rgba(0, 0, 0, .33);
+    height: 100%;
+    width: 100%;
+    position: relative;
 }
 @media only screen and (max-width: 1280px){
     .vertical-center-parent{

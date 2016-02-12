@@ -38,6 +38,6 @@
     background-image: url("../img/croissants-569075_1920.jpg");
 }
 
-h1.vertical-center{
+.black-overlay .vertical-center h1, .black-overlay .vertical-center h3{
     text-shadow: 3px 3px #222;
 }
