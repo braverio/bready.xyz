@@ -169,10 +169,15 @@ p, blockquote{
     text-decoration: none;
     border-radius: .25em;
     transition: background .25s;
+    cursor: pointer;
 }
 
 .button:hover {
     background: #6483b3;
+    text-decoration: none;
+}
+
+.button a{
     text-decoration: none;
 }
 
@@ -213,7 +218,8 @@ p, blockquote{
     padding: 5em 0em;
 }
 .page:nth-child(odd){
-    background: #222;
+    background-color: #222;
+    background-image: url("../img/bread%20texture.png");
     color: #eee;
     margin-left: auto;
     margin-right: auto;
@@ -304,6 +310,13 @@ a{
 a:hover{
     color: #6483b3;
 }
+.menu{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+}
 @media only screen and (max-width: 1280px){
     .vertical-center-parent{
         position: static;
@@ -369,3 +382,4 @@ a:hover{
         border-radius: 0px;
     }
 }
+

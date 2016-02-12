@@ -8,8 +8,19 @@ $(document).ready(function () {
             { queue: false, duration: 1500 }
         );
     }
-    
     setTimeout(loady, 100);
+    
+    
+    $.fn.nextOrFirst = function (selector) {
+        var next = this.next(selector);
+        return (next.length) ? next : this.prevAll(selector).last();
+    };
+    $("#cf2 img").click(function() {
+        $(this)
+        .removeClass('visible')
+        .nextOrFirst()
+        .addClass('visible');
+    });
 });
 
 // handle links with @href started with '#' only
