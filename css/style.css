@@ -269,11 +269,25 @@ blockquote::before{
     font-style: italic;
     text-align: right;
 }
-
 #downarrow, #rightarrow{
-    max-width: 25%;
+    cursor: pointer;
+    color: #222;
+    transition: opacity .25s;
+}
+#downarrow{
+    background-color: #edbc64;
 }
 #rightarrow{
+    background-color: #7398cf;
+}
+
+#downarrow:hover, #rightarrow:hover{
+    opacity: 0.75;
+}
+#downarrow img, #rightarrow img{
+    max-width: 25%;
+}
+#rightarrow img{
     transform: rotate(-90deg);
 }
 .hide-on-desktop{
@@ -313,12 +327,6 @@ a:hover{
         width: 50%;
         text-align: center;
     }
-    .col-3-single{
-        width: 33.33%;
-        float: none;
-        margin-left: auto;
-        margin-right: auto;
-    }
     .col-4-single{
         width: 50%;
         float: none;
@@ -347,7 +355,7 @@ a:hover{
         width: 80%;
     }
     .col-1, .col-2, .col-3, .col-4 {width: 100%;}
-    .col-3-single, .col-4-single{
+    .col-4-single{
         width: 100%;
     }
     h1{

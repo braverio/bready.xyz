@@ -72,10 +72,14 @@ nav li ul li {
     display: block;
 }
 
+footer p{
+    padding-bottom: 0px;
+}
 footer{
     width: 100%;
     color: #eee;
     background: #555;
+    margin-top: 1em;
     padding: 2em 0em;
     text-align: center;
 }
