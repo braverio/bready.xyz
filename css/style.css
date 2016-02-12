@@ -210,7 +210,7 @@ p, blockquote{
 .page{
     padding: 5em 0em;
 }
-.page:nth-child(even){
+.page:nth-child(odd){
     background: #222;
     color: #eee;
     margin-left: auto;

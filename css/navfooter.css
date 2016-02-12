@@ -58,10 +58,11 @@ nav li ul li {
 
 #toggleMenu{
     position: absolute;
-    height: 5em;
-    padding: 1em;
-    margin: 2em;
-    border: #eee solid 1px;
+    height: 3em;
+    padding: 0.5em;
+    margin: 1em;
+    cursor: pointer;
+    background: #555;
 }
 
 #hamburger li{
