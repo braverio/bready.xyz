@@ -162,7 +162,7 @@ p, blockquote{
     line-height: 150%;
 }
 .button {
-    background: #1976D2;
+    background: #7398cf;
     color: #eee;
     padding: 1em;
     text-decoration: none;
@@ -171,7 +171,7 @@ p, blockquote{
 }
 
 .button:hover {
-    background: #2196F3;
+    background: #6483b3;
     text-decoration: none;
 }
 
@@ -279,6 +279,14 @@ blockquote::before{
 .hide-on-mobile{
     display: block;
 }
+
+a{
+    color: #7398cf;
+    transition: color .25s;
+}
+a:hover{
+    color: #6483b3;
+}
 @media only screen and (max-width: 960px){
     .vertical-center-parent{
         position: static;
@@ -322,12 +330,6 @@ blockquote::before{
     #breadicon{
         width: 50%;
     }
-}
-
-footer{
-    width: 100%;
-    background: #edbc64;
-    padding: 2em 0em;
 }
 @media only screen and (max-width: 492px) {
     .see-more{

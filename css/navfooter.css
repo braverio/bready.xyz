@@ -68,3 +68,10 @@ nav li ul li {
 #hamburger li{
     display: block;
 }
+
+footer{
+    width: 100%;
+    color: #eee;
+    background: #555;
+    padding: 2em 0em;
+}
