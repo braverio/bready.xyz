@@ -304,7 +304,7 @@ a{
 a:hover{
     color: #6483b3;
 }
-@media only screen and (max-width: 960px){
+@media only screen and (max-width: 1280px){
     .vertical-center-parent{
         position: static;
     }
