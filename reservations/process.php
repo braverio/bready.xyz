@@ -2,7 +2,7 @@
 
 $db = get_db();
 
-$number = $db->real_escape_string(randomStr(7,"0123456789");
+$number = $db->real_escape_string(randomStr(7,"0123456789"));
 $name = $db->real_escape_string($_POST['name']);
 $email = $db->real_escape_string($_POST['email']);
 $phone = $db->real_escape_string($_POST['phone']);
