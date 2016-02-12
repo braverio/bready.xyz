@@ -48,6 +48,7 @@
 	   </ul>
     </nav>
     <div class="navoffset"></div>
+<?php if (isset($_REQUEST['text'])) { ?>
     <div class="row center-text">
         <h2>
             <?php
@@ -55,6 +56,7 @@
             ?>
         </h2>
     </div>
+<?php } ?>
         <div class="form-container">
         <h1>Contact us</h1><br>
         <p>If you have any questions, comments, or concerns, please feel free to use the contact form below. However, if you are looking to make a reservation at our restaurant, use the <a href="/reservations/">reservations form</a> instead.</p>
