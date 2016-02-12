@@ -273,6 +273,12 @@ blockquote::before{
 #rightarrow{
     transform: rotate(-90deg);
 }
+.hide-on-desktop{
+    display: none;
+}
+.hide-on-mobile{
+    display: block;
+}
 @media only screen and (max-width: 960px){
     .vertical-center-parent{
         position: static;

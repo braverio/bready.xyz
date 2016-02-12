@@ -11,7 +11,7 @@
     <script src="scripts/mainpage.js"></script>
 </head>
 <body>
-    <nav>
+    <nav class="hide-on-mobile">
         <ul> 
             <li><a href="/"><img src="/img/logo-white-small.svg"></a></li>
             <li>
@@ -30,6 +30,22 @@
                     <li><a href="/reservations">Reservations</a></li>
                 </ul>
             </li>
+	   </ul>
+    </nav>
+    <nav class="hide-on-desktop">
+        <script>
+            function toggle(){
+                $("#hamburger").toggleClass("hidden");}
+        </script>
+        <img src="img/hamburger.svg" id="toggleMenu" onclick="toggle()">
+        <ul id="hamburger" class="hidden"> 
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/reviews">Reviews</a></li>
+            <li><a href="/loyalty">Loyalty Program</a></li>
+            <li><a href="/menu">Menu</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+            <li><a href="/reservations">Reservations</a></li>
 	   </ul>
     </nav>
     <div class="fullpage parallax parallax-0">

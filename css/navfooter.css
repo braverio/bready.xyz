@@ -37,7 +37,6 @@ nav li li {
 
 nav li ul {
     position: absolute;
-    /*display: none;*/
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity .25s;
@@ -46,10 +45,25 @@ nav li ul {
 nav li:hover ul {
     visibility: visible;
     opacity: 1;
-    /*display: block;*/
 }
 
 nav li ul li {
     display: block;
     text-align: left;
+}
+
+.hidden{
+    display: none;
+}
+
+#toggleMenu{
+    position: absolute;
+    height: 5em;
+    padding: 1em;
+    margin: 2em;
+    border: #eee solid 1px;
+}
+
+#hamburger li{
+    display: block;
 }
