@@ -4,9 +4,14 @@
     <title>Bready || Reservations</title>
     <meta name="viewport" content="width=device-width, intial-scale = 1.0">
     <link rel="icon" href="/img/favicon.png">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/navfooter.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/navfooter.css">
+    <link rel="stylesheet" href="/styles/jquery-ui.min.css">
+    <link rel="stylesheet" href="/styles/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="/styles/jquery-ui.structure.min.css">
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="/styles/jquery-ui.min.js"></script>
+    <script src="reservations.js"></script>
     <noscript>Some features of this website require JavaScript to run. With it disabled, some functional and/or visual features may not work.</noscript>
 </head>
 <body>
@@ -47,5 +52,61 @@
             <li><a href="/reservations">Reservations</a></li>
 	   </ul>
     </nav>
+    <div class="page" id="1">
+        <div class="container col-3">
+            <div class="row">
+                <h2>Reservations</h2>
+                <p>To ensure you get a seat in our busy restaurant, please make a reservation about one hour in advance.</p>
+            </div>
+            <br><br>
+            <div class="row">
+                <h2>Hours of Operation</h2>
+                <p><strong>Monday-Saturday</strong> 7AM to 9PM</p>
+                <p><strong>Sunday</strong> 8AM to 6PM</p>
+                
+            </div>
+        </div>
+        <div class="form-container">
+            <form method="post" action="process.php">
+                <h2>Name</h2><input type="text" name="name"><br><br>
+                <h2>Email</Email2><input type="email" name="email"><br><br>
+                <h2>Phone</h2><input type="tel" name="phone"><br><br>
+                <h2>Number of Guests</h2><input type="number" name="guests"><br><br>
+                <h2 id="date">Date</h2><input type="text" name="day" id="datepicker"><br><br>
+                <h2 id="time">Time: 00:00 XM</h2>
+                <div class="col-4">
+                <h3>Hour</h3>
+                <select id="time-hr" name="hr" disabled>
+                    <option value="7">7AM</option>
+                    <option value="8">8AM</option>
+                    <option value="9">9AM</option>
+                    <option value="10">10AM</option>
+                    <option value="11">11AM</option>
+                    <option value="12">12PM</option>
+                    <option value="13">1PM</option>
+                    <option value="14">2PM</option>
+                    <option value="15">3PM</option>
+                    <option value="16">4PM</option>
+                    <option value="17">5PM</option>
+                    <option value="18">6PM</option>
+                    <option value="19">7PM</option>
+                    <option value="20">8PM</option>
+                </select>
+                <br><br>
+                </div>
+                
+                <div class="col-4">
+                <h3>Minute</h3>
+                <select id="time-min" name="min" disabled>
+                    <option value="00">00</option>
+                    <option value="15">15</option>
+                    <option value="30">30</option>
+                    <option value="45">45</option>
+                </select>
+                </div>
+                <input type="submit" value="Reserve Now!">
+            </form>
+        </div>
+    </div>
 </body>
 </html>
