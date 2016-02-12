@@ -9,7 +9,7 @@ nav img{
 }
 nav ul {
     list-style: none;
-    background-color: #555;
+    background-color: #edbc64;
     text-align: center;
 }
 
@@ -22,13 +22,13 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #eee;
+    color: #222;
     display: block;
     transition: color .25s;
 }
 
 nav a:hover{
-    color: #edbc64;
+    color: #555;
 }
 
 nav li li {
@@ -74,4 +74,13 @@ footer{
     color: #eee;
     background: #555;
     padding: 2em 0em;
+}
+
+footer img{
+    height: 3.5em;
+    display: inline;
+}
+
+img.sm{
+    width: 32%;
 }
