@@ -217,7 +217,7 @@ p, blockquote{
 .page{
     padding: 5em 0em;
 }
-.page:nth-child(odd){
+.textured-background{
     background-color: #222;
     background-image: url("../img/bread%20texture.png");
     color: #eee;
