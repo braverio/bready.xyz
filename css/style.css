@@ -160,6 +160,7 @@ h2{
 p, blockquote{
     font-size: 1.2em;
     line-height: 150%;
+    padding-bottom: 1.2em;
 }
 .button {
     background: #7398cf;
@@ -235,6 +236,7 @@ input[type="submit"]{
     font-family: "Overpass-Bold", sans-serif;
     font-size: 2em;
     padding: 0.5em;
+    cursor: pointer;
 }
 
 blockquote{
@@ -294,6 +296,7 @@ a:hover{
     }
     .vertical-center-child{
         position: static;
+        padding: 0px;
         width: 100%;
         top: 0%;
         transform: translateY(0%);
@@ -309,6 +312,12 @@ a:hover{
     .col-1, .col-2, .col-3, .col-4 {
         width: 50%;
         text-align: center;
+    }
+    .col-3-single{
+        width: 33.33%;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
     }
     .col-4-single{
         width: 50%;
@@ -338,6 +347,9 @@ a:hover{
         width: 80%;
     }
     .col-1, .col-2, .col-3, .col-4 {width: 100%;}
+    .col-3-single, .col-4-single{
+        width: 100%;
+    }
     h1{
         font-size: 3em;
     }

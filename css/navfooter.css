@@ -3,6 +3,9 @@ nav{
     width: 100%;
     z-index: 100;
 }
+.navoffset{
+    height: 5em;
+}
 
 nav img{
     height: 1em;
@@ -74,6 +77,7 @@ footer{
     color: #eee;
     background: #555;
     padding: 2em 0em;
+    text-align: center;
 }
 
 footer img{
