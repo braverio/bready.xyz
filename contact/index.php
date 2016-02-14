@@ -1,7 +1,7 @@
 <?php
 session_start();
-if (!isset($_SESSION['hash'])) {
-	$_SESSION['hash'] = md5(mt_rand(1,1000000));
+if (empty($_SESSION['token'])) {
+	$_SESSION['token'] = md5(mt_rand(1,1000000));
 }
 ?>
 <!DOCTYPE html>
