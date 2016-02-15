@@ -52,6 +52,15 @@
             <li><a href="/reservations">Reservations</a></li>
 	   </ul>
     </nav>
+    <?php if (isset($_REQUEST['text'])) { ?>
+    <div class="row center-text">
+        <h2>
+            <?php
+                echo $_REQUEST["text"];
+            ?>
+        </h2>
+    </div>
+    <?php } ?>
     <div class="navoffset"></div>
     <div class="page" id="1">
         <div class="container">

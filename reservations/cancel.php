@@ -1,7 +1,7 @@
 <?php
 require_once "../common.php";
 
-$location = "Location: http://bready.xyz/reservations/index.html?text=";
+$location = "Location: http://bready.xyz/reservations/index.php?text=";
 
 $db = get_db();
 
@@ -18,7 +18,7 @@ $db->query($sql);
 if($db->error){
     header('Your reservation was not found! Perhaps it is already gone.');
 }else{
-    header($location . "Reservation cancelled. Sorry to see you go. Maybe next time!");
+    header($location . "Reservation cancelled. We're sorry to see you go. Maybe next time!");
 }
 
 $db->close();

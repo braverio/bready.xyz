@@ -13,7 +13,7 @@ $sql = "UPDATE $table SET confirmed=1 WHERE rid='$rid' AND number='$number' AND 
     
 $db->query($sql);
 
-$location = "Location: http://bready.xyz/reservations/index.html?text=";
+$location = "Location: http://bready.xyz/reservations/index.php?text=";
 
 
 if($db->error){
