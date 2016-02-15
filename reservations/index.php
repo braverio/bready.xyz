@@ -52,6 +52,7 @@
             <li><a href="/reservations">Reservations</a></li>
 	   </ul>
     </nav>
+    <div class="navoffset"></div>
     <?php if (isset($_REQUEST['text'])) { ?>
     <div class="row center-text">
         <h2>
@@ -61,7 +62,6 @@
         </h2>
     </div>
     <?php } ?>
-    <div class="navoffset"></div>
     <div class="page" id="1">
         <div class="container">
             <div class="row">
