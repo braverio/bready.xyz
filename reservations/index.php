@@ -57,7 +57,7 @@
     <div class="row center-text">
         <h2>
             <?php
-                echo $_REQUEST["text"];
+                echo urldecode($_REQUEST["text"]);
             ?>
         </h2>
     </div>
