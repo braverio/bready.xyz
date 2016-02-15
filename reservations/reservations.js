@@ -47,6 +47,8 @@ $(function(){
     $("#time-min").change(function(){
         updateTime();
     });
+    
+    $("#");
 });
 
 function updateTime(){
@@ -67,7 +69,7 @@ function updateTime(){
         hrs = h;
     }
     
-    var minu = $("#time-min option:selected").val();
+    var minu = $("#time-min option:selected").val()     ;
     
     $('#time').text("Time: " + hrs + ":" + minu + " " + pl);
     

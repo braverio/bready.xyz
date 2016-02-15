@@ -9,5 +9,5 @@ $dbpass = "passwd";
 $tbls = [
     "a" => "tbl_a",
     "b" => "tbl_b",
-    "c" => "tbl_c"
+    "c" => "tb"
 ];

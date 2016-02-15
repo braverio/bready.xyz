@@ -18,9 +18,16 @@ $db->query($sql);
 
 $rid = $db->insert_id;
 
-mail($email,"Confirm your reservation","Reservation number $number: \nhttps://bready.xyz/reservations/confirm.php?rid=$rid&number=$number&token=$token");
+$headers = "From: reservations@bready.xyz". "\r\n" . 
+           "Content-type: text/html; charset=UTF-8" . "\r\n";
+
+$url = "http://bready.xyz/reservations/inline.php?rid=$rid&number=$number&token=$token";
+
+$fcontents = curl_get_contents($url);
+
+mail($email,"Bready Reservation $number Confirmation",$fcontents,$headers);
 
 $db->close();
 
-header("Location: https://bready.xyz");
+header("Location: https://bready.xyz?text=Success");
 ?>
