@@ -52,12 +52,22 @@
             <li><a href="/reservations">Reservations</a></li>
 	   </ul>
     </nav>
+    <?php if (isset($_REQUEST['text'])) { ?>
+    <div class="row center-text">
+        <h2>
+            <?php
+                echo $_REQUEST["text"];
+            ?>
+        </h2>
+    </div>
+    <?php } ?>
     <div class="navoffset"></div>
     <div class="page" id="1">
         <div class="container">
             <div class="row">
                 <h2>Reservations</h2>
                 <p>To ensure you get a seat in our busy restaurant, please make a reservation about one hour in advance.</p>
+                <p>For reservations more than 20 people, please call us at 714.555.2732</p>
             </div>
             <br><br>
             <div class="row">
@@ -68,16 +78,16 @@
         </div>
         <div class="form-container">
             <form method="post" action="process.php">
-                <h2>Name</h2><input type="text" name="name"><br><br>
-                <h2>Email</h2><input type="email" name="email"><br><br>
-                <h2>Phone</h2><input type="tel" name="phone"><br><br>
-                <h2>Number of Guests</h2><input type="number" name="guests"><br><br>
-                <h2 id="date">Date</h2><input type="text" name="day" id="datepicker"><br><br>
+                <h2>Name</h2><input type="text" name="name" required><br><br>
+                <h2>Email</h2><input type="email" name="email" required><br><br>
+                <h2>Phone</h2><input type="tel" name="phone" required><br><br>
+                <h2>Number of Guests</h2><input type="number" name="guests" min="1" max="20" required><br><br>
+                <h2 id="date">Date</h2><input type="text" name="day" id="datepicker" required><br><br>
                 <h2 id="time">Time: [please choose a date first]</h2>
-                <input type="hidden" id="time-process" name="time_process" value="00-00">
+                <input type="hidden" id="time-process" name="time_process" required>
 		<div class="col-4">
                 <h3>Hour</h3>
-                <select id="time-hr" name="hr" disabled>
+                <select id="time-hr" name="hr" disabled required>
                     <option value="7">7AM</option>
                     <option value="8">8AM</option>
                     <option value="9">9AM</option>
@@ -97,7 +107,7 @@
                 </div>
                 <div class="col-4">
                 <h3>Minute</h3>
-                <select id="time-min" name="min" disabled>
+                <select id="time-min" name="min" disabled required>
                     <option value="00">00</option>
                     <option value="15">15</option>
                     <option value="30">30</option>
