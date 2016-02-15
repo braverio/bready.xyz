@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, intial-scale = 1.0">
     <link rel="icon" href="/img/favicon.png">
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/brandon.css">
     <link rel="stylesheet" href="/styles/navfooter.css">
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
     <noscript>Some features of this website require JavaScript to run. With it disabled, some functional and/or visual features may not work.</noscript>
@@ -48,7 +49,46 @@
 	   </ul>
     </nav>
     <div class="navoffset"></div>
-    
+    <div class="container">
+        <div class="col-6">
+            <h2>Why join the Bready Member Club?</h2>
+            <p>By being a member, you can get weekly offers and coupons right in your email. You can also get points back in your account on every purchase you make!</p>
+            <p>If you are interested in joining, you may ask our clerk at our location or register below.</p>
+        </div>
+        <script>
+            function show(id){
+                $(id).removeClass('hidden');
+            }
+            
+            function hide(id){
+                $(id).addClass('hidden');
+            }
+        </script>
+        <div class="col-6">
+            <h2>Accounts</h2>
+            <p>Manage your Breader Member account or register for one here.</p>
+            <div class="selector button col-6" onclick="show('#signin');hide('#signup');">Sign In</div>
+            <div class="selector button col-6" onclick="show('#signup');hide('#signin');">Sign Up</div>
+            <div class="form-container" id="signin">
+            <form>
+                <h2 title="This may be your username, phone, email or account number">ID</h2><input type="text">
+                <h2>Password</h2><input type="password">
+            </form> 
+            </div>
+            <div class="form-container hidden" id="signup">
+            <form>
+                <h2>First Name</h2><input type="text">
+                <h2>Last Name</h2><input type="text">
+                <h2>Username</h2><input type="text">
+                <h2>E-mail</h2><input type="text">
+                <h2>Phone Number</h2><input type="text">
+                <h2>Mailing Address</h2><input type="text">
+                <h2>Create a Password</h2><input type="password">
+                <h2>Confirm Password</h2><input type="password">
+            </form>
+            </div>
+        </div>
+    </div>
     <footer>
         <div class="container">
             <div class="row">
