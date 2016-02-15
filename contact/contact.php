@@ -15,7 +15,7 @@ if (empty($_SESSION['token']) || empty($_POST['token'])) {
 }
 
 if ($_SESSION['token'] != $_POST['token']) {
-	header($location . "An error occured");
+	header($location . "An authentication error occured");
 } else if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
 	$_SESSION['token'] = ""; // Invalidate token.
     mail ("peteryang1625+bready@gmail.com", $subject, $message);
