@@ -1,4 +1,5 @@
 <?php
+require_once "../common.php";
 
 $db = get_db();
 
@@ -11,11 +12,11 @@ $time = $db->real_escape_string($_POST['time_process']);
 $token = $db->real_escape_string(randomStr());
 
 $table = $tbls['reservations'];
-$sql = "INSERT INTO $table (number,name,email,phone,guests,time,token) VALUES ($number,$name,$email,$phone,$amt,$time,$token)";
+$sql = "INSERT INTO $table (number,name,email,phone,guests,time,token) VALUES ('$number','$name','$email','$phone','$amt','$time','$token')";
 
-$db->query();
+$db->query($sql);
 
-$rid = $db->insert_id();
+$rid = $db->insert_id;
 
 mail($email,"Confirm your reservation","Reservation number $number: \nhttps://bready.xyz/reservations/confirm.php?rid=$rid&number=$number&token=$token");
 

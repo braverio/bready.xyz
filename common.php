@@ -1,6 +1,5 @@
 <?php
-require_once "./config.php";
-
+require_once "config.php";
 $rt = $_SERVER['DOCUMENT_ROOT'] . "/";
 
 function get_db(){

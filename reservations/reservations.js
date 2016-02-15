@@ -70,4 +70,11 @@ function updateTime(){
     var minu = $("#time-min option:selected").val();
     
     $('#time').text("Time: " + hrs + ":" + minu + " " + pl);
+    
+
+    var date = new Date($('#datepicker').val() + " " + hrs + ":" + minu + ":" + pl);
+    console.log(date.toISOString());
+    $('#time-process').val(date.toISOString());
 }
+
+
