@@ -219,7 +219,7 @@ p, blockquote{
 }
 
 .page{
-    padding: 5em 0em;
+    padding: 5em 0em 3em;
 }
 .textured-background{
     background-color: #222;
@@ -327,6 +327,20 @@ a:hover{
     width: 100%;
     position: relative;
 }
+.description-container{
+    height: 500px;
+    margin-bottom: 2em;
+}
+.description-container .black-overlay{
+    padding: 0em 15em;
+}
+.description-container p{
+    font-size: 2em;
+    padding-bottom: 0em;
+}
+.description-container p img{
+    height: 1em;
+}
 @media only screen and (max-width: 1280px){
     .vertical-center-parent{
         position: static;
@@ -337,6 +351,9 @@ a:hover{
         width: 100%;
         top: 0%;
         transform: translateY(0%);
+    }
+    .description-container .black-overlay{
+        padding: 0em 7em;
     }
 }
 @media only screen and (max-width: 768px) {
@@ -371,6 +388,12 @@ a:hover{
     #breadicon{
         width: 50%;
     }
+    .description-container p{
+        line-height: 1.2em;
+    }
+    .description-container .black-overlay{
+        padding: 0em 3em;
+    }
 }
 @media only screen and (max-width: 492px) {
     .more{
@@ -390,6 +413,9 @@ a:hover{
     .form-container input, .form-container textarea{
         width: 100%;
         border-radius: 0px;
+    }
+    .description-container p{
+        font-size: 1.5em;
     }
 }
 
