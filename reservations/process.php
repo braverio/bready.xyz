@@ -29,5 +29,5 @@ mail($email,"Bready Reservation $number Confirmation",$fcontents,$headers);
 
 $db->close();
 
-header("Location: https://bready.xyz?text=Success");
+header("Location: https://bready.xyz/reservations/?text=Success");
 ?>
