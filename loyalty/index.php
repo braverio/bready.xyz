@@ -28,7 +28,8 @@ if(isset($_SESSION['user'])){
                     changeYear:true,
                     changeMonth:true,
                     minDate:"-100Y",
-                    maxDate:"+0"
+                    maxDate:"+0",
+                    format:"yyyy-mm-dd"
                 });
             });
         </script>
@@ -46,15 +47,15 @@ if(isset($_SESSION['user'])){
             </div>
             <div class="form-container hidden" id="signup">
             <form action="register.php" method="POST">
-                <h2>First Name</h2><input type="text" required>
-                <h2>Last Name</h2><input type="text" required>
-                <h2>Username</h2><input type="text" required>
-                <h2>E-mail</h2><input type="email" required>
-                <h2>Phone Number</h2><input type="phone" required>
-                <h2>Date of Birth</h2><input type="text" id="datepicker" required>
-                <h2>Mailing Address</h2><input type="text" required>
-                <h2>Create a Password</h2><input id="pass" type="password" required>
-                <h2>Confirm Password</h2><input id="pass_confirm" type="password" required>
+                <h2>First Name</h2><input type="text" name="fn" required>
+                <h2>Last Name</h2><input type="text" name="ln" required>
+                <h2>Username</h2><input type="text" name="user" required>
+                <h2>E-mail</h2><input type="email" name="email" required>
+                <h2>Phone Number</h2><input type="phone" name="pn" required>
+                <h2>Date of Birth</h2><input type="text" name="dob" id="datepicker" required>
+                <h2>Mailing Address</h2><input type="text" name="addr" required>
+                <h2>Create a Password</h2><input id="pass" name="pass1" type="password" required>
+                <h2>Confirm Password</h2><input id="pass_confirm" name="pass2" type="password" required>
                 <input type="submit" class="button" value="Register">
             </form>
             <script language='javascript' type='text/javascript'>

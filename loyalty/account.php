@@ -1,6 +1,6 @@
 <?php
 require "../common.php";
-$location = "Location: https://test.bready.xyz/loyalty/index.php?text=";
+$location = "Location: https://bready.xyz/loyalty/index.php?text=";
 session_start();
 
 if(isset($_POST['login-id']) && isset($_POST['login-pass'])){
@@ -11,9 +11,7 @@ if(isset($_POST['login-id']) && isset($_POST['login-pass'])){
     
     $table = $tbls['loyalty'];
     $sql = "SELECT * FROM $table WHERE (aid='$user' OR email='$user' OR username='$user' OR phone='$user') AND passwd='$pass'";
-    
-    error_log($sql);
-    
+        
     $result = $db->query($sql);
     
     if($result->num_rows == 1){
