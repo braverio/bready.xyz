@@ -2,11 +2,17 @@
 session_start();
 $from = $_POST["from"];
 $email = $_POST["email"];
-$subject = $_POST["subject"];
+if (isset($_POST["subject"]))
+    $subject = $_POST["subject"];
+else
+    $subject = "Review";
 $message = $_POST["message"];
 
 $message = "Message from $from ($email):\n\n" . $message;
-$location = "Location: http://bready.xyz/contact/index.php?text=";
+if ($subject != "Review")
+    $location = "Location: http://bready.xyz/contact/index.php?text=";
+else
+    $location = "Location: http://bready.xyz/reviews/index.php?text=";
 
 // Check if the token was submitted, and if the session has the token.
 if (empty($_SESSION['token']) || empty($_POST['token'])) {

@@ -62,8 +62,8 @@
         </h2>
     </div>
     <?php } ?>
-    <div class="page" id="1">
-        <div class="container">
+        <div class="form-container">
+            <h1>Reservations</h1>
             <div class="row">
                 <h2>Reservations</h2>
                 <p>To ensure you get a seat in our busy restaurant, please make a reservation about one hour in advance.</p>
@@ -86,7 +86,7 @@
                 <h2 id="time">Time: [please choose a date first]</h2>
                 <input type="hidden" id="time-process" name="time_process" required>
 		<div class="col-4">
-                <h3>Hour</h3>
+                <h2>Hour</h2>
                 <select id="time-hr" name="hr" disabled required>
                     <option value="7">7AM</option>
                     <option value="8">8AM</option>
@@ -106,7 +106,7 @@
                 <br><br>
                 </div>
                 <div class="col-4">
-                <h3>Minute</h3>
+                <h2>Minute</h2>
                 <select id="time-min" name="min" disabled required>
                     <option value="00">00</option>
                     <option value="15">15</option>
@@ -117,7 +117,6 @@
                 <input type="submit" value="Reserve Now!" class="button">
             </form>
         </div>
-    </div>
     <footer>
         <div class="container">
             <div class="row">

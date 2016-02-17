@@ -1,3 +1,9 @@
+<?php
+session_start();
+if (empty($_SESSION['token'])) {
+	$_SESSION['token'] = md5(mt_rand(1,1000000));
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -48,7 +54,50 @@
 	   </ul>
     </nav>
     <div class="navoffset"></div>
-    
+<?php if (isset($_REQUEST['text'])) { ?>
+    <div class="row center-text">
+        <h2>
+            <?php
+                echo $_REQUEST["text"];
+            ?>
+        </h2>
+    </div>
+<?php } ?>
+        <div class="container">
+            <div class="row">
+                <h1>Customer reviews</h1>
+                <p>Don't just take it from us. Find out why so many customers are ready to eat at Bready.</p><br>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <blockquote>
+                        Before I was ready, my life was a mess. Once this bakery came into my life, I was swept away!<br><br>-Alivery Furdudan
+                    </blockquote>
+                </div>
+                <div class="col-4">
+                    <blockquote>
+                        The bread is simply fantastic. Even my friends who aren't insane enough to go on strange diets are making the switch to gluten-free foods!<br><br>-Kurcan Hilason
+                    </blockquote>
+                </div>
+                <div class="col-4">
+                    <blockquote>
+                        Whether you sit down in the bakery's relaxing environment or you take something back home to enjoy, the products here will always bring a smile to your face, and your scale!<br><br>-Banalam Rekapa
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    <div class="container">
+        <h1>Leave a review</h1>
+    </div>
+    <div class="form-container"><br>
+        <form action="../contact/contact.php" method="POST">
+			<input type="hidden" name="token" value="<?php print $_SESSION['token']; ?>" />
+            <h2>Your Name</h2><input type="text" name="from"><br><br>
+            <h2>Your Email</h2><input type="text" name="email"><br><br>
+            <h2>Review</h2><textarea name="message" rows="6"></textarea><br><br>
+            <input type="submit" value="Submit" class="button">
+        </form>
+    </div>
     <footer>
         <div class="container">
             <div class="row">
