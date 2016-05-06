@@ -137,13 +137,13 @@ table {
 .hidden{display: none;}
 .circle-images img{
     border-radius: 50%;
-    padding: 10%;
+    padding: 0%;
     margin-bottom: 2em;
     border: 2px solid #555;
     transition: padding .25s;
 }
 .circle-images img:hover{
-    padding: 0em;
+    padding: 10%;
 }
 body{
 	background: #eee;
@@ -153,9 +153,11 @@ body{
 h1{
     font-family: 'Overpass-Bold', sans-serif;
     font-size: 5em;
+    text-align: center;
 }
 h2{
     font-size: 2em;
+    text-align: center;
 }
 h3{
     font-family: 'Overpass-Bold', sans-serif;
@@ -171,18 +173,12 @@ p, blockquote{
     color: #eee;
     padding: 1em;
     text-decoration: none;
-    border-radius: .25em;
     transition: background .25s;
     cursor: pointer;
 }
 
 .button:hover {
     background: #6483b3;
-    text-decoration: none;
-}
-
-.button a{
-    text-decoration: none;
 }
 
 #logo {
@@ -227,6 +223,8 @@ p, blockquote{
     color: #eee;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 2em;
+    padding-bottom: 5em;
 }
 .form-container{
     margin-left: auto;
@@ -310,10 +308,13 @@ blockquote::before{
 a{
     color: #7398cf;
     transition: color .25s;
+    text-decoration: none;
 }
+
 a:hover{
     color: #6483b3;
 }
+
 .menu{
     font-family: 'Roboto', sans-serif;
     font-size: 2em;
