@@ -40,9 +40,10 @@ if (empty($_SESSION['token'])) {
     <nav class="hide-on-desktop">
         <script>
             function toggle(){
-                $("#hamburger").toggleClass("hidden");}
+                $("#hamburger").slideToggle();
+            }
         </script>
-        <img src="/img/hamburger.svg" id="toggleMenu" onclick="toggle()">
+        <img src="img/hamburger.svg" id="toggleMenu" onclick="toggle()">
         <ul id="hamburger" class="hidden"> 
             <li><a href="/">Home</a></li>
             <li><a href="/about">About Us</a></li>

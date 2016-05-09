@@ -55,10 +55,6 @@ nav li ul li {
     text-align: left;
 }
 
-.hidden{
-    display: none;
-}
-
 #toggleMenu{
     position: absolute;
     right: 0px;
