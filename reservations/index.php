@@ -65,28 +65,29 @@
     <?php } ?>
 <div class="container">
     <div class="col-6">
-            <div class="row">
-                <h1>Dine-in!</h1>
-                <h2>Reservations</h2>
-                <p>Tired of waiting in line? No matter your party size, feel free to make a reservation so you can walk in and sit down without delay! However, if you have a party larger than nine (9) individuals, we highly recommend making a reservation.</p>
-                <p>For parties larger than 24 individuals, please call us at 714.555.2732 for more details.</p>
-            </div>
-            <div class="row">
-                <h2>Hours of Operation</h2>
-                <p class="center-text">Monday to Saturday: 7AM to 9PM<br>Sunday 8AM to 6PM</p>
-            </div>
-            <img src="/img/logo.svg" class="hide-on-mobile">
+        <div class="row">
+            <h1>Dine-in!</h1>
+            <h2>Reservations</h2>
+            <p>Tired of waiting in line? No matter your party size, feel free to make a reservation so you can walk in and sit down without delay! However, if you have a party larger than nine (9) individuals, we highly recommend making a reservation.</p>
+            <p>For parties larger than 24 individuals, please call us at 714.555.2732 for more details.</p>
         </div>
+        <div class="row">
+            <h2>Hours of Operation</h2>
+            <p class="center-text">Monday to Saturday: 7AM to 9PM<br>Sunday 8AM to 6PM</p>
+        </div>
+        <img src="/img/breadyhero.jpg" class="hide-on-mobile">
+    </div>
     <div class="col-6 form-container">
-            <form method="post" action="process.php">
-                <h2>Name</h2><input type="text" name="name" required placeholder="We will use this name for check-in"><br><br>
-                <h2>Email</h2><input type="email" name="email" required placeholder="We will send you a confirmation email"><br><br>
-                <h2>Phone</h2><input type="tel" name="phone" placeholder="Optional"><br><br>
-                <h2>Number of Guests</h2><input type="number" name="guests" min="1" max="24" required placeholder="Call us for parties larger than 24"><br><br>
-                <h2 id="date">Date</h2><input type="text" name="day" id="datepicker" required placeholder="Choose a date to see available times"><br><br>
-                                <h2 id="time" class="hidden">Time: [please choose a date first]</h2>
-                <input type="hidden" id="time-process" name="time_process" required>
-		<div class="col-6 center-text">
+        <form method="post" action="process.php">
+            <h2>Name</h2><input type="text" name="name" required placeholder="We will use this name for check-in"><br><br>
+            <h2>Email</h2><input type="email" name="email" required placeholder="We will send you a confirmation email"><br><br>
+            <h2>Phone</h2><input type="tel" name="phone" placeholder="Optional"><br><br>
+            <h2>Number of Guests</h2><input type="number" name="guests" min="1" max="24" required placeholder="Call us for parties larger than 24"><br><br>
+            <h2 id="date">Date</h2><input type="text" name="day" id="datepicker" required placeholder="Choose a date to see available times"><br><br>
+            <h2 id="time" class="hidden">Time: [please choose a date first]</h2>
+            <input type="hidden" id="time-process" name="time_process" required>
+        <div class="row center-text">
+            <div class="col-6" style="padding:0px">
                 <h2>Hour</h2>
                 <select id="time-hr" name="hr" disabled required>
                     <option value="7">7AM</option>
@@ -103,10 +104,9 @@
                     <option value="18">6PM</option>
                     <option value="19">7PM</option>
                     <option value="20">8PM</option>
-                </select>
-                <br><br>
-                </div>
-                <div class="col-6 center-text">
+                </select><br><br>
+            </div>
+            <div class="col-6" style="padding:0px">
                 <h2>Minute</h2>
                 <select id="time-min" name="min" disabled required>
                     <option value="00">00</option>
@@ -114,11 +114,13 @@
                     <option value="30">30</option>
                     <option value="45">45</option>
                 </select>
-                </div>
-                <input type="submit" value="Reserve Now!" class="button">
-            </form>
+            </div>
         </div>
+        <p>Upon submission, you will be emailed a message which you will have to click through in order to confirm your reservation. If you do not receive it within a few minutes, be sure to check your spam folder.</p>
+        <input type="submit" value="Reserve Now!" class="button">
+        </form>
     </div>
+</div>
     <footer>
         <div class="container">
             <div class="row">
