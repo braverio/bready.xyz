@@ -63,30 +63,26 @@
         </h2>
     </div>
     <?php } ?>
-        <div class="form-container">
+<div class="form-container">
             <h1>Reservations</h1>
             <div class="row">
                 <h2>Reservations</h2>
-                <p>To ensure you get a seat in our busy restaurant, please make a reservation about one hour in advance.</p>
-                <p>For reservations more than 20 people, please call us at 714.555.2732</p>
+                <p>Tired of waiting in line? No matter your party size, feel free to make a reservation so you can walk in and sit down without delay! However, if you have a party larger than nine (9) individuals, we highly recommend making a reservation.</p>
+                <p>For parties larger than 24 individuals, please call us at 714.555.2732 for more details.</p>
             </div>
-            <br><br>
             <div class="row">
                 <h2>Hours of Operation</h2>
-                <p>Mon. to Sat. 7AM to 9PM</p>
-                <p>Sun. 8AM to 6PM</p>
+                <p class="center-text">Monday to Saturday: 7AM to 9PM<br>Sunday 8AM to 6PM</p>
             </div>
-        </div>
-        <div class="form-container">
             <form method="post" action="process.php">
-                <h2>Name</h2><input type="text" name="name" required><br><br>
-                <h2>Email</h2><input type="email" name="email" required><br><br>
-                <h2>Phone</h2><input type="tel" name="phone" required><br><br>
-                <h2>Number of Guests</h2><input type="number" name="guests" min="1" max="20" required><br><br>
-                <h2 id="date">Date</h2><input type="text" name="day" id="datepicker" required><br><br>
-                <h2 id="time">Time: [please choose a date first]</h2>
+                <h2>Name</h2><input type="text" name="name" required placeholder="We will use this name for check-in"><br><br>
+                <h2>Email</h2><input type="email" name="email" required placeholder="We will send you a confirmation email"><br><br>
+                <h2>Phone</h2><input type="tel" name="phone" placeholder="Optional"><br><br>
+                <h2>Number of Guests</h2><input type="number" name="guests" min="1" max="24" required placeholder="Call us for parties larger than 24"><br><br>
+                <h2 id="date">Date</h2><input type="text" name="day" id="datepicker" required placeholder="Choose a date to see available times"><br><br>
+                                <h2 id="time" class="hidden">Time: [please choose a date first]</h2>
                 <input type="hidden" id="time-process" name="time_process" required>
-		<div class="col-4">
+		<div class="col-6 center-text">
                 <h2>Hour</h2>
                 <select id="time-hr" name="hr" disabled required>
                     <option value="7">7AM</option>
@@ -106,7 +102,7 @@
                 </select>
                 <br><br>
                 </div>
-                <div class="col-4">
+                <div class="col-6 center-text">
                 <h2>Minute</h2>
                 <select id="time-min" name="min" disabled required>
                     <option value="00">00</option>

@@ -6,13 +6,16 @@ $(function(){
             var now = new Date();
             var input = new Date($(this).val());
 
+            //If the user selected date is today
             if(now.getDate() == input.getDate()){
+                //If it is Sunday, limit some hours
                 if(input.getDay() == 0){
                     $("#time-hr option[value='7']").attr('disabled','disabled');
                     $("#time-hr option[value='18']").attr('disabled','disabled');
                     $("#time-hr option[value='19']").attr('disabled','disabled');
                     $("#time-hr option[value='20']").attr('disabled','disabled'); 
                 }
+                
                 $("#time-hr option").each(function(n,e){
                     var n = parseInt($(this).val());
                     if(n <= now.getHours()){
@@ -22,7 +25,11 @@ $(function(){
                     }
                 });
                 
-            }else{
+            }
+            
+            //If the user selected date is not today
+            else{
+                //If it is Sunday, limit some hours
                 if(input.getDay() == 0){
                     $("#time-hr option[value='7']").attr('disabled','disabled');
                     $("#time-hr option[value='18']").attr('disabled','disabled');
@@ -34,7 +41,11 @@ $(function(){
                      });
                 }
             }
+            
+            //Allow the user to select a time now
             $('#time-hr').removeAttr('disabled');
+            $('#time-min').removeAttr('disabled');
+            document.getElementById()
             updateTime();
         }
     });
@@ -76,5 +87,3 @@ function updateTime(){
     console.log(date.toISOString());
     $('#time-process').val(date.toISOString());
 }
-
-

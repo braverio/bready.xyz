@@ -29,5 +29,5 @@ mail($email,"Bready Reservation $number Confirmation",$fcontents,$headers);
 
 $db->close();
 
-header("Location: https://bready.xyz/reservations/index.php?text=Success! Please check your email to confirm your reservation. If you don't see it within 10 minutes, it may be in your spam folder.");
+header("Location: https://bready.xyz/reservations/index.php?text=Success! Please check your email to confirm your reservation.");
 ?>

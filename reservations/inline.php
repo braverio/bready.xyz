@@ -31,7 +31,7 @@ echo "
 
 </head>
 <body style='vertical-align: baseline; box-sizing: border-box; color: #222; font-style: normal; font-variant: normal; font-weight: normal; font-size: normal; line-height: normal; background-image: none; background-attachment: scroll; background-repeat: repeat; background-color: #EEE; background-position: 0% 0%; margin: 0px; padding: 0px; border: 0px none;' bgcolor='#EEE'><div style='font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; vertical-align: baseline; box-sizing: border-box; margin: 0.25em; padding: 0.25em; border: 0px none;'>
-    <img src='https://bready.xyz/img/logo.svg' width='25%' style='font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; vertical-align: baseline; box-sizing: border-box; margin: 0px; padding: 0px; border: 0px none;'>
+    <img src='https://bready.xyz/img/logo.png' width='25%' style='font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; vertical-align: baseline; box-sizing: border-box; margin: 0px; padding: 0px; border: 0px none;'>
     
     
     <div style='font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; vertical-align: baseline; box-sizing: border-box; overflow: hidden; margin: 0.5em 0px 0px; padding: 0px; border: 0px none;'>
