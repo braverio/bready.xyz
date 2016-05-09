@@ -42,7 +42,7 @@
                 $("#hamburger").slideToggle();
             }
         </script>
-        <img src="img/hamburger.svg" id="toggleMenu" onclick="toggle()">
+        <img src="/img/hamburger.svg" id="toggleMenu" onclick="toggle()">
         <ul id="hamburger" class="hidden"> 
             <li><a href="/">Home</a></li>
             <li><a href="/about">About Us</a></li>
@@ -63,9 +63,10 @@
         </h2>
     </div>
     <?php } ?>
-<div class="form-container">
-            <h1>Reservations</h1>
+<div class="container">
+    <div class="col-6">
             <div class="row">
+                <h1>Dine-in!</h1>
                 <h2>Reservations</h2>
                 <p>Tired of waiting in line? No matter your party size, feel free to make a reservation so you can walk in and sit down without delay! However, if you have a party larger than nine (9) individuals, we highly recommend making a reservation.</p>
                 <p>For parties larger than 24 individuals, please call us at 714.555.2732 for more details.</p>
@@ -74,6 +75,9 @@
                 <h2>Hours of Operation</h2>
                 <p class="center-text">Monday to Saturday: 7AM to 9PM<br>Sunday 8AM to 6PM</p>
             </div>
+            <img src="/img/logo.svg" class="hide-on-mobile">
+        </div>
+    <div class="col-6 form-container">
             <form method="post" action="process.php">
                 <h2>Name</h2><input type="text" name="name" required placeholder="We will use this name for check-in"><br><br>
                 <h2>Email</h2><input type="email" name="email" required placeholder="We will send you a confirmation email"><br><br>
@@ -114,6 +118,7 @@
                 <input type="submit" value="Reserve Now!" class="button">
             </form>
         </div>
+    </div>
     <footer>
         <div class="container">
             <div class="row">

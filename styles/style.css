@@ -229,7 +229,6 @@ p, blockquote{
 .form-container{
     margin-left: auto;
     margin-right: auto;
-    max-width: 500px;
 }
 .form-container input, .form-container textarea{
     width: 100%;
