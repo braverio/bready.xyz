@@ -15,8 +15,8 @@ $sql = "DELETE FROM $table WHERE rid='$rid' AND number='$number' AND token='$tok
     
 $db->query($sql);
 
-if($db->error){
-    header('Your reservation was not found! Perhaps it is already gone.');
+if($db->affected_rows < 1 || $db->error){
+    header($location . 'Your reservation was not found! Perhaps it is already gone.');
 }else{
     header($location . "Reservation cancelled. We're sorry to see you go. Maybe next time!");
 }

@@ -18,7 +18,7 @@ $db->query($sql);
 
 $rid = $db->insert_id;
 
-$headers = "From: reservations@bready.xyz". "\r\n" . 
+$headers = "From: Bready Reservations <reservations@bready.xyz>". "\r\n" . 
            "Content-type: text/html; charset=UTF-8" . "\r\n";
 
 $url = "http://bready.xyz/reservations/inline.php?rid=$rid&number=$number&token=$token";

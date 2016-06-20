@@ -16,8 +16,8 @@ $db->query($sql);
 $location = "Location: http://bready.xyz/reservations/index.php?text=";
 
 
-if($db->error){
-    header($location . 'Your reservation was not found!');
+if($db->affected_rows < 1 || $db->error){
+    header($location . 'Your reservation was not found or is already confirmed!');
 }else{
     header($location . "Reservation confirmed. See you soon!");
 }
