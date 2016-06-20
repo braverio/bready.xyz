@@ -106,7 +106,7 @@ $guests = $data['guests'];
 $raw_time = $data['time'];
 
 $d = new DateTime($raw_time);
-$time = $d->format('F n, o \a\t g:iA');
+$time = $d->format('F j, o \a\t g:iA');
 
 ?>
 
