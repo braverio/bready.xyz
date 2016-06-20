@@ -11,9 +11,11 @@
         box-sizing: border-box;
     }
     .container{
+        max-width: 800px;
         font-family: "Roboto","Helvetica","Arial",sans-serif;
         color: #222;
         font-size: 2vh;
+        margin: auto;
 }
     .header{
         background: #edbc64;
@@ -37,14 +39,6 @@
         text-align: right;
         font-weight: bold;
         padding-right: 2em;
-    }
-    .buttons:after{
-        visibility: hidden;
-        display: block;
-        font-size: 0;
-        content: " ";
-        clear: both;
-        height: 0;
     }
     .cancel{
         float: right;
@@ -74,22 +68,17 @@
         max-width: 80%;
     }
     img{
-        width: 100%;
+        max-width: 500px;
     }
     span{
         font-weight: bold;
     }
+    .clear{
+        clear: both;
+    }
 </style>
 
 <div class="container">
-<!--
-    $number (id)
-    $name
-    $email
-    $phone
-    $guests
-    $time
--->
     <div class="header">
         Bready Reservation #$number
     </div>
@@ -139,20 +128,20 @@
                 </div>
             </a>
         </div>
+        <p class="clear">If the above buttons do not work, copy and paste or type in exactly the following links into a web browser.</p>
         <br>
-        <p>If the above buttons do not work, copy and paste or type in exactly the following links into a web browser.</p>
-        <br>
-        <p class="word-break">
+        <p class="word-break clear">
             <span>Confirm: </span>https://bready.xyz/reservation/whateter/stuff/
             <br>
             <br>
             <span>Cancel: </span>https://bready.xyz/reservation/whateter/stuff/
         </p>
-    </div>
-    <div class="footer">
-        <p>Thank you for choosing to dine with us!</p><br>
-        <div class="img">
-            <img src="https://bready.xyz/img/logo.jpg">
+        <div class="footer clear">
+            <br>
+            <p>Thank you for choosing to dine with us!</p><br>
+            <div class="img">
+                <img src="https://bready.xyz/img/logo.jpg">
+            </div>
         </div>
     </div>
     <br>
