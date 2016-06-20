@@ -86,7 +86,6 @@ $time = $d->format("r");
 <div class="container">
     <img src="https://bready.xyz/img/logo.jpg" width=25%>
     
-    
     <div class="section-wrapper">
         <div class="section-header" id="resv">
             <p class="col-3 header">Reservation Number:</p>
