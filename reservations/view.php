@@ -123,7 +123,7 @@ $time = $d->format('F n, o \a\t g:iA');
         Bready Reservation #<?php echo $number;?>
     </div>
     <div class="body">
-        <p>Hello Valued Customer!<br><br>You have recently made a reservation with us. Please verify the follow details and click on the confirmation link. If you did not make a reservation with us or would like to cancel your reservation, please click on the cancellation link below.</p>
+        <p>Hello Valued Customer!<br><br>You have recently made a reservation with us. Please verify the following details and click on the confirmation link. If you did not make a reservation with us or would like to cancel your reservation, please click on the cancellation link below.</p>
         <div class="data">
             <table>
                 <tr>
