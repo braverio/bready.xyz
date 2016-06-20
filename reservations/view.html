@@ -27,7 +27,7 @@
     .body{
         padding: 2em;
     }
-    table{
+    .data table{
         margin: auto;
         padding: 1em 0em;
         word-break: break-all;
@@ -35,7 +35,7 @@
     .word-break{
         word-break: break-all;
     }
-    tr td:first-child{
+    .data table tr td:first-child{
         text-align: right;
         font-weight: bold;
         padding-right: 2em;
@@ -46,17 +46,20 @@
     .confirm{
         float: left;
     }
-    .confirm, .cancel{
-        width: 45%;
+    .buttons{
+        width: 50%;
         background: #7398cf;
-        color: white;
         padding: 1em;
         text-align: center;
         transition: background .25s;
         cursor: pointer;
     }
-    .confirm:hover, .cancel:hover{
+    .buttons:hover{
         background: #6483b3;
+    }
+    .buttons a{
+        text-decoration: none;
+        color: white;
     }
     .footer{
         text-align: center;
@@ -116,18 +119,17 @@
                 </tr>
             </table>
         </div>
-        <div class="buttons">
-            <a href="thing" target="_blank">
-                <div class="confirm">
-                    Confirm
-                </div>
-            </a>
-            <a href="thing" target="_blank">
-                <div class="cancel">
-                    Cancel
-                </div>
-            </a>
-        </div>
+            <table style="width: 100%;">
+                <tr>
+                    <td class="buttons">
+                        <a href="thing" target="_blank">Confirm</a>
+                    </td>
+                    <td class="buttons">
+                        <a href="thing" target="_blank">Cancel</a>
+                    </td>
+                </tr>
+            </table>
+        <br>
         <p class="clear">If the above buttons do not work, copy and paste or type in exactly the following links into a web browser.</p>
         <br>
         <p class="word-break clear">
